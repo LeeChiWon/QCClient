@@ -32,3 +32,10 @@ FORMS    += mainwindow.ui \
 
 RESOURCES += \
     qcclientresource.qrc
+
+win32
+{
+   RC_FILE = QCClient.rc
+   CONFIG += embed_manifest_exe
+   QMAKE_LFLAGS_WINDOWS += /MANIFESTUAC:level=\'requireAdministrator\'
+}
