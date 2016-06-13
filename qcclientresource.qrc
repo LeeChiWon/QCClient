@@ -7,7 +7,7 @@
         <file>Image/Korean.gif</file>
         <file>Image/background.png</file>
         <file>Image/Language.png</file>
-        <file>Image/MainIcon.ico</file>
+        <file>Image/MainIcon.png</file>
     </qresource>
     <qresource prefix="/Language"/>
 </RCC>

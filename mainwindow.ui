@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="qcclientresource.qrc">
-    <normaloff>:/Image/Image/MainIcon.ico</normaloff>:/Image/Image/MainIcon.ico</iconset>
+    <normaloff>:/Image/Image/MainIcon.png</normaloff>:/Image/Image/MainIcon.png</iconset>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>
