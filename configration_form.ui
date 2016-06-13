@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Configration_Form</class>
+ <widget class="QWidget" name="Configration_Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>860</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>환경설정</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="qcclientresource.qrc">
+    <normaloff>:/Image/Image/Configration.png</normaloff>:/Image/Image/Configration.png</iconset>
+  </property>
+ </widget>
+ <resources>
+  <include location="qcclientresource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

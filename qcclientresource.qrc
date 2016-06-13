@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/Image">
+        <file>Image/Configration.png</file>
+        <file>Image/Temperature.png</file>
+        <file>Image/WorkPlan.png</file>
+        <file>Image/English.gif</file>
+        <file>Image/Korean.gif</file>
+        <file>Image/background.png</file>
+        <file>Image/Language.png</file>
+        <file>Image/MainIcon.ico</file>
+    </qresource>
+    <qresource prefix="/Language"/>
+</RCC>

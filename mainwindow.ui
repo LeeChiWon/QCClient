@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>860</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QCClient</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="qcclientresource.qrc">
+    <normaloff>:/Image/Image/MainIcon.ico</normaloff>:/Image/Image/MainIcon.ico</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="background">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>255</red>
+         <green>255</green>
+         <blue>255</blue>
+        </color>
+       </brush>
+      </property>
+      <property name="viewMode">
+       <enum>QMdiArea::TabbedView</enum>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="tabsMovable">
+       <bool>true</bool>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>860</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Show">
+    <property name="title">
+     <string>화면</string>
+    </property>
+    <addaction name="action_Show_WorkPlan"/>
+    <addaction name="action_Show_Temperature"/>
+   </widget>
+   <widget class="QMenu" name="menu_Tool">
+    <property name="title">
+     <string>툴</string>
+    </property>
+    <widget class="QMenu" name="menu_Language">
+     <property name="title">
+      <string>언어</string>
+     </property>
+     <property name="icon">
+      <iconset resource="qcclientresource.qrc">
+       <normaloff>:/Image/Image/Language.png</normaloff>:/Image/Image/Language.png</iconset>
+     </property>
+     <addaction name="action_Language_Korean"/>
+     <addaction name="action_Language_English"/>
+    </widget>
+    <addaction name="menu_Language"/>
+    <addaction name="action_Configration"/>
+   </widget>
+   <addaction name="menu_Show"/>
+   <addaction name="menu_Tool"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Show_WorkPlan"/>
+   <addaction name="action_Show_Temperature"/>
+   <addaction name="action_Configration"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_Show_WorkPlan">
+   <property name="icon">
+    <iconset resource="qcclientresource.qrc">
+     <normaloff>:/Image/Image/WorkPlan.png</normaloff>:/Image/Image/WorkPlan.png</iconset>
+   </property>
+   <property name="text">
+    <string>작업계획</string>
+   </property>
+  </action>
+  <action name="action_Show_Temperature">
+   <property name="icon">
+    <iconset resource="qcclientresource.qrc">
+     <normaloff>:/Image/Image/Temperature.png</normaloff>:/Image/Image/Temperature.png</iconset>
+   </property>
+   <property name="text">
+    <string>온도현황판</string>
+   </property>
+  </action>
+  <action name="action_Language_Korean">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qcclientresource.qrc">
+     <normaloff>:/Image/Image/Korean.gif</normaloff>:/Image/Image/Korean.gif</iconset>
+   </property>
+   <property name="text">
+    <string>한국어(Korean)</string>
+   </property>
+  </action>
+  <action name="action_Language_English">
+   <property name="icon">
+    <iconset resource="qcclientresource.qrc">
+     <normaloff>:/Image/Image/English.gif</normaloff>:/Image/Image/English.gif</iconset>
+   </property>
+   <property name="text">
+    <string>English(English)</string>
+   </property>
+  </action>
+  <action name="action_Configration">
+   <property name="icon">
+    <iconset resource="qcclientresource.qrc">
+     <normaloff>:/Image/Image/Configration.png</normaloff>:/Image/Image/Configration.png</iconset>
+   </property>
+   <property name="text">
+    <string>환경설정</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="qcclientresource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
