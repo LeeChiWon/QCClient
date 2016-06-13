@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     Init(); //초기화
+    //backho1
 }
 
 MainWindow::~MainWindow()
