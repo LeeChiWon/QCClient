@@ -13,10 +13,11 @@ class temp_moniter_style1 : public QWidget
 
 public:
     explicit temp_moniter_style1(QWidget *parent = 0);
+    Ui::temp_moniter_style1 *ui;
     ~temp_moniter_style1();
 
 private:
-    Ui::temp_moniter_style1 *ui;
+
 };
 
 #endif // TEMP_MONITER_STYLE1_H
