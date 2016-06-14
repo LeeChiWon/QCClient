@@ -14,6 +14,7 @@ class temp_moniter_style1 : public QWidget
 public:
     explicit temp_moniter_style1(QWidget *parent = 0);
     Ui::temp_moniter_style1 *ui;
+    int number;  //어디위치의 위젯인지 구분하기 위해서 넣어줌
     ~temp_moniter_style1();
 
 private:
