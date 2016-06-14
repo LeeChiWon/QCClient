@@ -55,7 +55,7 @@ padding:0px;</string>
     </widget>
    </item>
    <item row="0" column="0" colspan="3">
-    <widget class="QComboBox" name="comboBox">
+    <widget class="QComboBox" name="templist">
      <property name="font">
       <font>
        <pointsize>16</pointsize>

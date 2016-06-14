@@ -6,6 +6,7 @@ temp_moniter_style1::temp_moniter_style1(QWidget *parent) :
     ui(new Ui::temp_moniter_style1)
 {
     ui->setupUi(this);
+    number = 0;
 }
 
 temp_moniter_style1::~temp_moniter_style1()
