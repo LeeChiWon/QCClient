@@ -21,6 +21,16 @@ void MainWindow::Init()
 {
     pMain=this; //메인윈도우 복사
     ui->mdiArea->setBackground(*new QBrush(*new QPixmap(":/Image/Image/background.png"))); //QMDIArea 배경화면 추가
+
+    QSqlDatabase LocalDB=QSqlDatabase::addDatabase("QSQLITE","LocalDB");
+    LocalDB.setDatabaseName("Local.db");
+
+    if(!LocalDB.open())
+    {
+        qDebug()<<tr("Database Setting Open failed!");
+        QSqlDatabase::removeDatabase("LocalDB");
+        return;
+    }
 }
 
 void MainWindow::LoadSubWindow(QWidget *widget)

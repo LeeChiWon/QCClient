@@ -36,17 +36,7 @@ void Configration_Form::Init() //초기화
 }
 
 void Configration_Form::DatabaseSettingMode(int Mode)
-{
-    LocalDB=QSqlDatabase::addDatabase("QSQLITE","LocalDB");
-    LocalDB.setDatabaseName("Local.db");
-
-    if(!LocalDB.open())
-    {
-        qDebug()<<tr("Database Setting Open failed!");
-        QSqlDatabase::removeDatabase("LocalDB");
-        return;
-    }
-
+{    
     switch(Mode)
     {
     case DB_INIT:
@@ -57,12 +47,12 @@ void Configration_Form::DatabaseSettingMode(int Mode)
         break;
     case DB_LOAD:
         break;
-    }
-    QSqlDatabase::removeDatabase("LocalDB");
+    }    
 }
 
 void Configration_Form::DatabaseSettingInit()
 {
+    QSqlDatabase LocalDB=QSqlDatabase::database("LocalDB");
     QSqlQuery query(LocalDB);
     query.exec("CREATE TABLE  IF NOT EXISTS systemset (remotedbip TEXT,"
                "remotedbport TEXT,"
@@ -110,23 +100,10 @@ void Configration_Form::DatabaseSettingInit()
 
 void Configration_Form::DatabaseSettingSave()
 {
+    QSqlDatabase LocalDB=QSqlDatabase::database("LocalDB");
     QSqlQuery query(LocalDB);
-    query.exec(QString("update systemset set remotedbip='%1',remotedbport='%2',version=1,remotedbusername='%3',remotedbpassword='%4',current_machine_name='%5'")
-               .arg(ui->lineEdit_IPAddress->text(),ui->lineEdit_Port->text(),ui->lineEdit_UserName->text(),ui->lineEdit_Password->text())
-                    +"',remotedbport"
-                    "remotedbname,"
-                    "version,"
-                    "remotedbusername,"
-                    "remotedbpassword,"
-                    "current_macine_name) "
-                    "select \'127.0.0.1\',"
-                    "\'3306\',"
-                    "\'QCproject\',"
-                    "1,"
-                    "\'QCmen\',"
-                    "\'1234\', "
-                    "\'select\'"
-                    "where not exists(select * from systemset);");
+    query.exec(QString("update systemset set remotedbip='%1',remotedbport='%2',version=1,remotedbusername='%3',remotedbpassword='%4'")
+               .arg(ui->lineEdit_IPAddress->text(),ui->lineEdit_Port->text(),ui->lineEdit_UserName->text(),ui->lineEdit_Password->text()));
 }
 
 void Configration_Form::on_pushButton_Check_clicked()
