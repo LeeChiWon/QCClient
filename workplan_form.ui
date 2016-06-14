@@ -21,7 +21,7 @@
    <item row="0" column="0">
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
-      <widget class="QComboBox" name="comboBox"/>
+      <widget class="QComboBox" name="comboBox_MachineName"/>
      </item>
      <item row="1" column="0">
       <widget class="QPushButton" name="pushButton">

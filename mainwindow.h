@@ -6,6 +6,7 @@
 #include "configration_form.h"
 #include "workplan_form.h"
 #include "temperature_form.h"
+#include "globalinclude.h"
 
 namespace Ui {
 class MainWindow;
@@ -23,6 +24,7 @@ public:
     QPointer<Configration_Form> cConfigration_Form; //환경설정화면
     QPointer<WorkPlan_Form> cWorkPlan_Form; //작업계획화면
     QPointer<Temperature_Form> cTemperature_Form; //온도현황판화면
+    QStringList DatabaseInfo; //데이터베이스정보
 
     /********** 함수 **********/
     void Init(); //초기화
@@ -31,7 +33,6 @@ public:
 private slots:
     void on_action_Configration_triggered(); //환경설정버튼
     void on_action_Show_WorkPlan_triggered(); //작업계획버튼
-
     void on_action_Show_Temperature_triggered();
 
 private:
