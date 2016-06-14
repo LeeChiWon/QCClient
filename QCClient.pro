@@ -18,17 +18,20 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     configration_form.cpp \
     workplan_form.cpp \
-    temperature_form.cpp
+    temperature_form.cpp \
+    temp_moniter_style1.cpp
 
 HEADERS  += mainwindow.h \
     configration_form.h \
     workplan_form.h \
-    temperature_form.h
+    temperature_form.h \
+    temp_moniter_style1.h
 
 FORMS    += mainwindow.ui \
     configration_form.ui \
     workplan_form.ui \
-    temperature_form.ui
+    temperature_form.ui \
+    temp_moniter_style1.ui
 
 RESOURCES += \
     qcclientresource.qrc
