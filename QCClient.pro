@@ -25,7 +25,8 @@ HEADERS  += mainwindow.h \
     configration_form.h \
     workplan_form.h \
     temperature_form.h \
-    temp_moniter_style1.h
+    temp_moniter_style1.h \
+    globalinclude.h
 
 FORMS    += mainwindow.ui \
     configration_form.ui \
