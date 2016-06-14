@@ -15,6 +15,11 @@ public:
     explicit Configration_Form(QWidget *parent = 0);
     ~Configration_Form();
 
+    /********** 변수 **********/
+
+    /********** 함수 **********/
+    void resizeEvent(QResizeEvent*);
+
 private:
     Ui::Configration_Form *ui;
 };
