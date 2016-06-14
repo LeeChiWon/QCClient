@@ -110,7 +110,6 @@ void Configration_Form::DatabaseSettingInit()
 
 void Configration_Form::DatabaseSettingSave()
 {
-
     QSqlQuery query(LocalDB);
     query.exec(QString("update systemset set remotedbip='%1',remotedbport='%2',version=1,remotedbusername='%3',remotedbpassword='%4',current_machine_name='%5'")
                .arg(ui->lineEdit_IPAddress->text(),ui->lineEdit_Port->text(),ui->lineEdit_UserName->text(),ui->lineEdit_Password->text())

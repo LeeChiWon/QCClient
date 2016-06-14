@@ -19,6 +19,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+     Ui::MainWindow *ui;
 
     /********** 변수 **********/
     QPointer<Configration_Form> cConfigration_Form; //환경설정화면
@@ -36,7 +37,7 @@ private slots:
     void on_action_Show_Temperature_triggered();
 
 private:
-    Ui::MainWindow *ui;
+
 };
 
 #endif // MAINWINDOW_H

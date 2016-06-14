@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QtWidgets>
 #include <QSqlDatabase>
+#include <QSqlQuery>
 
 namespace Ui {
 class Configration_Form;
