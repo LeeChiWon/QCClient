@@ -36,7 +36,7 @@ void MainWindow::Init()
     {
         cConfigration_Form=new Configration_Form();
         LoadSubWindow(cConfigration_Form);
-        pMain->ui->mdiArea->closeActiveSubWindow();
+        ui->mdiArea->closeActiveSubWindow();
     }
     //remote sql 접속
     QSqlQuery localdbquery(LocalDB);
