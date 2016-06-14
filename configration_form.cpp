@@ -110,18 +110,33 @@ void Configration_Form::on_pushButton_Check_clicked()
 {
     if(ui->lineEdit_IPAddress->text().isEmpty() || ui->lineEdit_Port->text().isEmpty() || ui->lineEdit_UserName->text().isEmpty()
             || ui->lineEdit_DBName->text().isEmpty()|| ui->lineEdit_Password->text().isEmpty())
-    {
+    {        
         DatabaseSettingMode(DB_SAVE);
+        QMessageBox::information(this,tr("Apply"),tr("Configration Applied."),QMessageBox::Ok);
+    }
+    else
+    {
+        QMessageBox::warning(this,tr("Warning"),tr("Configration is empty."),QMessageBox::Ok);
     }
     pMain->ui->mdiArea->closeActiveSubWindow();
 }
 
 void Configration_Form::on_pushButton_Apply_clicked()
 {
-
+    if(ui->lineEdit_IPAddress->text().isEmpty() || ui->lineEdit_Port->text().isEmpty() || ui->lineEdit_UserName->text().isEmpty()
+            || ui->lineEdit_DBName->text().isEmpty()|| ui->lineEdit_Password->text().isEmpty())
+    {
+        DatabaseSettingMode(DB_SAVE);
+        QMessageBox::information(this,tr("Apply"),tr("Configration Applied."),QMessageBox::Ok);
+    }
+    else
+    {
+        QMessageBox::warning(this,tr("Warning"),tr("Configration is empty."),QMessageBox::Ok);
+    }
 }
 
 void Configration_Form::on_pushButton_Cancel_clicked()
 {
+    QMessageBox::information(this,tr("Cancel"),tr("Configration Canceled."),QMessageBox::Ok);
     pMain->ui->mdiArea->closeActiveSubWindow();
 }
