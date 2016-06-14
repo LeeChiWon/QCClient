@@ -19,7 +19,7 @@ public:
     ~Configration_Form();
 
     /********** 변수 **********/
-    QSqlDatabase LocalDB; //서버 데이터베이스 셋팅 저장 및 불러오는 데이터베이스
+
     /********** 함수 **********/
     void resizeEvent(QResizeEvent*);
     void Init(); //초기화
