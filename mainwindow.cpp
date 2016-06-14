@@ -31,6 +31,13 @@ void MainWindow::Init()
         QSqlDatabase::removeDatabase("LocalDB");
         return;
     }
+
+    if(cConfigration_Form.isNull())
+    {
+        cConfigration_Form=new Configration_Form();
+        LoadSubWindow(cConfigration_Form);
+        pMain->ui->mdiArea->closeActiveSubWindow();
+    }
     //remote sql 접속
     QSqlQuery localdbquery(LocalDB);
     localdbquery.exec("select * from systemset");
