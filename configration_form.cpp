@@ -111,7 +111,7 @@ void Configration_Form::on_pushButton_Check_clicked()
     if(ui->lineEdit_IPAddress->text().isEmpty() || ui->lineEdit_Port->text().isEmpty() || ui->lineEdit_UserName->text().isEmpty()
             || ui->lineEdit_DBName->text().isEmpty()|| ui->lineEdit_Password->text().isEmpty())
     {
-
+        DatabaseSettingMode(DB_SAVE);
     }
     pMain->ui->mdiArea->closeActiveSubWindow();
 }
