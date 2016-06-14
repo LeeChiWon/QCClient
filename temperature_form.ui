@@ -17,7 +17,62 @@
    <iconset resource="qcclientresource.qrc">
     <normaloff>:/Image/Image/Temperature.png</normaloff>:/Image/Image/Temperature.png</iconset>
   </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="2" column="5">
+    <widget class="temp_moniter_style1" name="temp1" native="true"/>
+   </item>
+   <item row="3" column="4">
+    <widget class="temp_moniter_style1" name="temp5" native="true"/>
+   </item>
+   <item row="2" column="8">
+    <widget class="temp_moniter_style1" name="temp4" native="true"/>
+   </item>
+   <item row="2" column="7">
+    <widget class="temp_moniter_style1" name="temp3" native="true"/>
+   </item>
+   <item row="2" column="6">
+    <widget class="temp_moniter_style1" name="temp2" native="true"/>
+   </item>
+   <item row="4" column="4">
+    <widget class="temp_moniter_style1" name="temp10" native="true"/>
+   </item>
+   <item row="3" column="7">
+    <widget class="temp_moniter_style1" name="temp8" native="true"/>
+   </item>
+   <item row="3" column="5">
+    <widget class="temp_moniter_style1" name="temp6" native="true"/>
+   </item>
+   <item row="3" column="6">
+    <widget class="temp_moniter_style1" name="temp7" native="true"/>
+   </item>
+   <item row="3" column="8">
+    <widget class="temp_moniter_style1" name="temp9" native="true"/>
+   </item>
+   <item row="4" column="5">
+    <widget class="temp_moniter_style1" name="temp11" native="true"/>
+   </item>
+   <item row="4" column="6">
+    <widget class="temp_moniter_style1" name="temp12" native="true"/>
+   </item>
+   <item row="4" column="7">
+    <widget class="temp_moniter_style1" name="temp13" native="true"/>
+   </item>
+   <item row="4" column="8">
+    <widget class="temp_moniter_style1" name="temp14" native="true"/>
+   </item>
+   <item row="2" column="4">
+    <widget class="temp_moniter_style1" name="temp0" native="true"/>
+   </item>
+  </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>temp_moniter_style1</class>
+   <extends>QWidget</extends>
+   <header location="global">temp_moniter_style1.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="qcclientresource.qrc"/>
  </resources>
