@@ -31,6 +31,22 @@ void MainWindow::Init()
         QSqlDatabase::removeDatabase("LocalDB");
         return;
     }
+    //remote sql 접속
+    QSqlQuery localdbquery(LocalDB);
+    localdbquery.exec("select * from systemset");
+    localdbquery.next();
+    QSqlDatabase RemoteDB=QSqlDatabase::addDatabase("QMYSQL","RemoteDB");
+    RemoteDB.setHostName(localdbquery.value("remotedbip").toString());
+    RemoteDB.setDatabaseName(localdbquery.value("remotedbname").toString());
+    RemoteDB.setPort(localdbquery.value("remotedbport").toInt());
+    RemoteDB.setUserName(localdbquery.value("remotedbusername").toString());
+    RemoteDB.setPassword(localdbquery.value("remotedbpassword").toString());
+    if(!RemoteDB.open()){
+        qDebug()<<tr("Database Setting Open failed!");
+        QSqlDatabase::removeDatabase("RemoteDB");
+        return;
+    }
+
 }
 
 void MainWindow::LoadSubWindow(QWidget *widget)
