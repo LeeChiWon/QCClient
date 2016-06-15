@@ -31,7 +31,7 @@ Temperature_Form::Temperature_Form(QWidget *parent) :
     tempinit(ui->temp13,13);
     tempinit(ui->temp14,14);
     tempinit(ui->temp15,15);
-    mainloop.setInterval(LOOPTIME);
+    mainloop.setInterval(TEMPLOOPTIME);
     connect(&mainloop,SIGNAL(timeout()),this,SLOT(mainlooptimeout()));
     mainloop.start();
 }
