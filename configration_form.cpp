@@ -63,6 +63,7 @@ void Configration_Form::DatabaseSettingInit()
                "remotedbusername TEXT,"
                "remotedbpassword TEXT,"
                "current_macine_name TEXT"
+               "language INTEGER"
                ");");
     query.exec("insert into systemset(remotedbip,"
                "remotedbport,"
@@ -78,6 +79,7 @@ void Configration_Form::DatabaseSettingInit()
                "\'QCmen\',"
                "\'1234\', "
                "\'select\'"
+               "0"
                "where not exists(select * from systemset);");
     query.exec("CREATE TABLE IF NOT EXISTS [temp_setindex]("
                "[ID] INT NOT NULL DEFAULT 1, "
@@ -104,7 +106,7 @@ void Configration_Form::DatabaseSettingSave()
 {
     QSqlDatabase LocalDB=QSqlDatabase::database("LocalDB");
     QSqlQuery query(LocalDB);
-    query.exec(QString("update systemset set remotedbip='%1',remotedbport='%2',version=1,remotedbname='%3',remotedbusername='%4',remotedbpassword='%5'")
+    query.exec(QString("update systemset set remotedbip='%1',remotedbport='%2',version=1,remotedbname='%3',remotedbusername='%4',remotedbpassword='%5',language=%6")
                .arg(ui->lineEdit_IPAddress->text(),ui->lineEdit_Port->text(),ui->lineEdit_DBName->text(),ui->lineEdit_UserName->text(),ui->lineEdit_Password->text()));
 }
 
