@@ -6,7 +6,7 @@
 #include <QSqlQuery>
 #include <temp_moniter_style1.h>
 #include <QTimer>
-#define LOOPTIME 1500
+#define TEMPLOOPTIME 1500
 namespace Ui {
 class Temperature_Form;
 }
