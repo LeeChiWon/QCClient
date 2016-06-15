@@ -97,18 +97,18 @@
    </property>
    <widget class="QMenu" name="menu_Show">
     <property name="title">
-     <string>화면</string>
+     <string>Show</string>
     </property>
     <addaction name="action_Show_WorkPlan"/>
     <addaction name="action_Show_Temperature"/>
    </widget>
    <widget class="QMenu" name="menu_Tool">
     <property name="title">
-     <string>툴</string>
+     <string>Tool</string>
     </property>
     <widget class="QMenu" name="menu_Language">
      <property name="title">
-      <string>언어</string>
+      <string>Language</string>
      </property>
      <property name="icon">
       <iconset resource="qcclientresource.qrc">
@@ -141,7 +141,10 @@
      <normaloff>:/Image/Image/WorkPlan.png</normaloff>:/Image/Image/WorkPlan.png</iconset>
    </property>
    <property name="text">
-    <string>작업계획</string>
+    <string>WorkPlan(Ctrl+&amp;W)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
    </property>
   </action>
   <action name="action_Show_Temperature">
@@ -150,10 +153,31 @@
      <normaloff>:/Image/Image/Temperature.png</normaloff>:/Image/Image/Temperature.png</iconset>
    </property>
    <property name="text">
-    <string>온도현황판</string>
+    <string>Temperature(Ctrl+&amp;T)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
    </property>
   </action>
   <action name="action_Language_Korean">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qcclientresource.qrc">
+     <normaloff>:/Image/Image/Korean.gif</normaloff>:/Image/Image/Korean.gif</iconset>
+   </property>
+   <property name="text">
+    <string>한국어(Korean)(Ctrl+&amp;K)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+K</string>
+   </property>
+  </action>
+  <action name="action_Language_English">
    <property name="checkable">
     <bool>true</bool>
    </property>
@@ -162,19 +186,13 @@
    </property>
    <property name="icon">
     <iconset resource="qcclientresource.qrc">
-     <normaloff>:/Image/Image/Korean.gif</normaloff>:/Image/Image/Korean.gif</iconset>
-   </property>
-   <property name="text">
-    <string>한국어(Korean)</string>
-   </property>
-  </action>
-  <action name="action_Language_English">
-   <property name="icon">
-    <iconset resource="qcclientresource.qrc">
      <normaloff>:/Image/Image/English.gif</normaloff>:/Image/Image/English.gif</iconset>
    </property>
    <property name="text">
-    <string>English(English)</string>
+    <string>English(English)(Ctrl+&amp;E)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
    </property>
   </action>
   <action name="action_Configration">
@@ -183,7 +201,10 @@
      <normaloff>:/Image/Image/Configration.png</normaloff>:/Image/Image/Configration.png</iconset>
    </property>
    <property name="text">
-    <string>환경설정</string>
+    <string>Configration(Ctrl+&amp;C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
    </property>
   </action>
  </widget>
