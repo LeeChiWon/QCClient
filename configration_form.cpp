@@ -71,7 +71,8 @@ void Configration_Form::DatabaseSettingInit()
                "version,"
                "remotedbusername,"
                "remotedbpassword,"
-               "current_macine_name) "
+               "current_macine_name,"
+               "language)"
                "select \'127.0.0.1\',"
                "\'3306\',"
                "\'QCproject\',"
@@ -79,7 +80,7 @@ void Configration_Form::DatabaseSettingInit()
                "\'QCmen\',"
                "\'1234\', "
                "\'select\',"
-               "0"
+               "0 "
                "where not exists(select * from systemset);");
     query.exec("CREATE TABLE IF NOT EXISTS [temp_setindex]("
                "[ID] INT NOT NULL DEFAULT 1, "

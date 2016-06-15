@@ -66,14 +66,19 @@ void MainWindow::LoadSubWindow(QWidget *widget)
 
 void MainWindow::LanguageChange(int LanguageSelect)
 {
-    QApplication::removeTranslator(&Translator);
+    ui->action_Language_English->setChecked(false);
+    ui->action_Language_Korean->setChecked(false);
+
+    QApplication::removeTranslator(&Translator);    
     switch(LanguageSelect)
     {
     case LANGUAGE_KOREAN:
         Translator.load(":/Language/Lang_ko_KR.qm");
+        ui->action_Language_Korean->setChecked(true);
         break;
     case LANGUAGE_ENGLISH:
         Translator.load(":/Language/Lang_en_US.qm");
+        ui->action_Language_English->setChecked(true);
         break;
     }
     QApplication::installTranslator(&Translator);
@@ -83,6 +88,7 @@ void MainWindow::LanguageChange(int LanguageSelect)
     QSqlQuery localdbquery(LocalDB);
     localdbquery.exec(QString("update systemset set language=%1")
                .arg(QString::number(LanguageSelect)));
+
     emit Retranslator();
 }
 
