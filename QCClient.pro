@@ -37,6 +37,8 @@ FORMS    += mainwindow.ui \
 RESOURCES += \
     qcclientresource.qrc
 
+TRANSLATIONS += Lang_ko_KR.ts\
+                Lang_en_US.ts
 win32
 {
    RC_FILE = QCClient.rc
