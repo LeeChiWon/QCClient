@@ -1,7 +1,10 @@
 #include "temperature_form.h"
 #include "ui_temperature_form.h"
 #include "ui_temp_moniter_style1.h"
+#include "ui_mainwindow.h"
+#include "mainwindow.h"
 
+extern MainWindow *pMain;
 
 Temperature_Form::Temperature_Form(QWidget *parent) :
     QWidget(parent),
@@ -34,6 +37,9 @@ Temperature_Form::Temperature_Form(QWidget *parent) :
     mainloop.setInterval(TEMPLOOPTIME);
     connect(&mainloop,SIGNAL(timeout()),this,SLOT(mainlooptimeout()));
     mainloop.start();
+
+    connect(pMain,SIGNAL(Retranslator()),this,SLOT(Retranslator()));
+    Retranslator();
 }
 
 void Temperature_Form::tempinit(temp_moniter_style1 *tempdata, int number){
@@ -95,6 +101,11 @@ void Temperature_Form::mainlooptimeout(){
     tempdataup(ui->temp14);
     tempdataup(ui->temp15);
 
+}
+
+void Temperature_Form::Retranslator()
+{
+    ui->retranslateUi(this);
 }
 void Temperature_Form::tempdataup(temp_moniter_style1 *tempdata){
 

@@ -121,10 +121,10 @@ void MainWindow::on_action_Show_Temperature_triggered() //온도현황판 버튼
 
 void MainWindow::on_action_Language_Korean_triggered()
 {
-
+    LanguageChange(LANGUAGE_KOREAN);
 }
 
 void MainWindow::on_action_Language_English_triggered()
 {
-
+    LanguageChange(LANGUAGE_ENGLISH);
 }

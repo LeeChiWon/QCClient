@@ -6,6 +6,7 @@
 #include <QSqlQuery>
 #include <temp_moniter_style1.h>
 #include <QTimer>
+
 #define TEMPLOOPTIME 1500
 namespace Ui {
 class Temperature_Form;
@@ -25,14 +26,12 @@ public:
     void tempdataup(temp_moniter_style1 *tempdata);
     ~Temperature_Form();
 
-
-
 private:
     Ui::Temperature_Form *ui;
 
 private slots:
     void mainlooptimeout();
-
+    void Retranslator();
 };
 
 #endif // TEMPERATURE_FORM_H

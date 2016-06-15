@@ -32,8 +32,10 @@ void Configration_Form::resizeEvent(QResizeEvent *)
 
 void Configration_Form::Init() //초기화
 {
+    connect(pMain,SIGNAL(Retranslator()),this,SLOT(Retranslator()));
     DatabaseSettingMode(DB_INIT);
     DatabaseSettingMode(DB_LOAD);
+    Retranslator();
 }
 
 void Configration_Form::DatabaseSettingMode(int Mode)
@@ -178,4 +180,9 @@ void Configration_Form::on_pushButton_Cancel_clicked()
 {
     QMessageBox::information(this,tr("Cancel"),tr("Configration Canceled."),QMessageBox::Ok);
     pMain->ui->mdiArea->closeActiveSubWindow();
+}
+
+void Configration_Form::Retranslator()
+{
+    ui->retranslateUi(this);
 }

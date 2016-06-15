@@ -1,6 +1,9 @@
 #include "workplan_form.h"
 #include "ui_workplan_form.h"
-#include "QDebug"
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+
+extern MainWindow *pMain;
 
 WorkPlan_Form::WorkPlan_Form(QWidget *parent) :
     QWidget(parent),
@@ -29,6 +32,9 @@ WorkPlan_Form::WorkPlan_Form(QWidget *parent) :
     connect(&timer,SIGNAL(timeout()),this,SLOT(main_update_loop()));
     timer.start();
     main_update_loop();
+
+    connect(pMain,SIGNAL(Retranslator()),this,SLOT(Retranslator()));
+    Retranslator();
 }
 void WorkPlan_Form::main_update_loop(){
     QString maichine_name;
@@ -68,6 +74,11 @@ void WorkPlan_Form::main_update_loop(){
     int remind_time_sec =  remind_count * remotetimesec;
     remind_time = temptime.addSecs(remind_time_sec);
     ui->remindtime_value_label->setText(remind_time.toString("hh:mm:ss"));
+}
+
+void WorkPlan_Form::Retranslator()
+{
+    ui->retranslateUi(this);
 }
 
 void WorkPlan_Form::resizeEvent(QResizeEvent *){
