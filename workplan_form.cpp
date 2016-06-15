@@ -70,7 +70,7 @@ void WorkPlan_Form::main_update_loop(){
     ui->remindtime_value_label->setText(remind_time.toString("hh:mm:ss"));
 }
 
-void WorkPlan_Form::resizeEvent(QResizeEvent *event){
+void WorkPlan_Form::resizeEvent(QResizeEvent *){
     /*화면크기에 따른 폰트사이즈 조정*/
     QFont font;
 

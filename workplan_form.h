@@ -29,8 +29,7 @@ private slots:
 
 private:
     Ui::WorkPlan_Form *ui;
-
-    void resizeEvent(QResizeEvent *event);
+    void resizeEvent(QResizeEvent *);
 };
 
 #endif // WORKPLAN_FORM_H
