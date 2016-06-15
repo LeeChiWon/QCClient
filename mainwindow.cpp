@@ -47,6 +47,7 @@ void MainWindow::Init()
     RemoteDB.setPort(localdbquery.value("remotedbport").toInt());
     RemoteDB.setUserName(localdbquery.value("remotedbusername").toString());
     RemoteDB.setPassword(localdbquery.value("remotedbpassword").toString());
+    LanguageChange(localdbquery.value("language").toInt());
 
     if(!RemoteDB.open()){
         qDebug()<<"remote Database Setting Open failed!";
@@ -61,6 +62,28 @@ void MainWindow::LoadSubWindow(QWidget *widget)
     Window->setWindowTitle(widget->windowTitle());
     Window->setWindowIcon(widget->windowIcon());
     Window->show();
+}
+
+void MainWindow::LanguageChange(int LanguageSelect)
+{
+    QApplication::removeTranslator(&Translator);
+    switch(LanguageSelect)
+    {
+    case LANGUAGE_KOREAN:
+        Translator.load(":/Language/Lang_ko_KR.qm");
+        break;
+    case LANGUAGE_ENGLISH:
+        Translator.load(":/Language/Lang_en_US.qm");
+        break;
+    }
+    QApplication::installTranslator(&Translator);
+    ui->retranslateUi(this);
+
+    QSqlDatabase LocalDB=QSqlDatabase::database("LocalDB");
+    QSqlQuery localdbquery(LocalDB);
+    localdbquery.exec(QString("update systemset set language=%1")
+               .arg(QString::number(LanguageSelect)));
+    emit Retranslator();
 }
 
 void MainWindow::on_action_Configration_triggered() //환경설정 버튼 클릭 이벤트
@@ -88,4 +111,14 @@ void MainWindow::on_action_Show_Temperature_triggered() //온도현황판 버튼
         cTemperature_Form=new Temperature_Form();
         LoadSubWindow(cTemperature_Form);
     }
+}
+
+void MainWindow::on_action_Language_Korean_triggered()
+{
+
+}
+
+void MainWindow::on_action_Language_English_triggered()
+{
+
 }

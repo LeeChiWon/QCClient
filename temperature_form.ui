@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>온도현황판</string>
+   <string>Temperature</string>
   </property>
   <property name="windowIcon">
    <iconset resource="qcclientresource.qrc">

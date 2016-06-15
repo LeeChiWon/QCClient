@@ -9,5 +9,8 @@
         <file>Image/Language.png</file>
         <file>Image/MainIcon.png</file>
     </qresource>
-    <qresource prefix="/Language"/>
+    <qresource prefix="/Language">
+        <file>Lang_en_US.qm</file>
+        <file>Lang_ko_KR.qm</file>
+    </qresource>
 </RCC>

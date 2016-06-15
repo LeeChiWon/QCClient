@@ -11,15 +11,18 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>환경설정</string>
+   <string>Configration</string>
   </property>
   <property name="windowIcon">
    <iconset resource="qcclientresource.qrc">
     <normaloff>:/Image/Image/Configration.png</normaloff>:/Image/Image/Configration.png</iconset>
   </property>
-  <layout class="QGridLayout" name="gridLayout" rowstretch="1,15,0,0,0,0">
+  <layout class="QGridLayout" name="gridLayout" rowstretch="1,15,0,0,0">
    <item row="1" column="0">
     <widget class="QTabWidget" name="tabWidget">
+     <property name="tabPosition">
+      <enum>QTabWidget::North</enum>
+     </property>
      <property name="currentIndex">
       <number>0</number>
      </property>

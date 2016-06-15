@@ -26,7 +26,7 @@ WorkPlan_Form::WorkPlan_Form(QWidget *parent) :
     connect(ui->comboBox_MachineName,SIGNAL(currentIndexChanged(QString)),this,SLOT(on_comboBox_MachineName_currentIndexChanged(QString)));
 }
 
-void WorkPlan_Form::resizeEvent(QResizeEvent *event){
+void WorkPlan_Form::resizeEvent(QResizeEvent *){
     /*화면크기에 따른 폰트사이즈 조정*/
     QFont font;
 
