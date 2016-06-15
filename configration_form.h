@@ -26,6 +26,8 @@ public:
     void DatabaseSettingMode(int Mode); //데이터베이스설정 모드
     void DatabaseSettingInit(); //데이터베이스설정 초기화
     void DatabaseSettingSave(); //데이터베이스설정 저장
+    void DatabaseSettingCheck(); //데이터베이스설정 확인
+    void DatabaseSettingLoad(); //데이터베이스설정 불러오기
 
 private slots:
     void on_pushButton_Check_clicked();

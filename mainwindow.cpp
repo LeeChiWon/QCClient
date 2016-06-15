@@ -27,7 +27,7 @@ void MainWindow::Init()
 
     if(!LocalDB.open())
     {
-        qDebug()<<tr("Database Setting Open failed!");
+        qDebug()<<tr("local Database Setting Open failed!");
         QSqlDatabase::removeDatabase("LocalDB");
         return;
     }
@@ -47,8 +47,9 @@ void MainWindow::Init()
     RemoteDB.setPort(localdbquery.value("remotedbport").toInt());
     RemoteDB.setUserName(localdbquery.value("remotedbusername").toString());
     RemoteDB.setPassword(localdbquery.value("remotedbpassword").toString());
+
     if(!RemoteDB.open()){
-        qDebug()<<tr("Database Setting Open failed!");
+        qDebug()<<tr("remote Database Setting Open failed!");
         QSqlDatabase::removeDatabase("RemoteDB");
         return;
     }
