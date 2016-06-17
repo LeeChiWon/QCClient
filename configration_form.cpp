@@ -32,8 +32,12 @@ void Configration_Form::resizeEvent(QResizeEvent *)
 
 void Configration_Form::Init() //초기화
 {
+    connect(pMain,SIGNAL(Retranslator()),this,SLOT(Retranslator()));
+    connect(ui->tabWidget,SIGNAL(currentChanged(int)),this,SLOT(TitleShow(int)));
+    Retranslator();
+    TitleShow(0);
     DatabaseSettingMode(DB_INIT);
-    DatabaseSettingMode(DB_LOAD);
+    DatabaseSettingMode(DB_LOAD);    
 }
 
 void Configration_Form::DatabaseSettingMode(int Mode)
@@ -178,4 +182,14 @@ void Configration_Form::on_pushButton_Cancel_clicked()
 {
     QMessageBox::information(this,tr("Cancel"),tr("Configration Canceled."),QMessageBox::Ok);
     pMain->ui->mdiArea->closeActiveSubWindow();
+}
+
+void Configration_Form::Retranslator()
+{
+    ui->retranslateUi(this);
+}
+
+void Configration_Form::TitleShow(int Changed)
+{
+    ui->label_Title->setText(ui->tabWidget->tabText(Changed));
 }
