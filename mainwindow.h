@@ -7,6 +7,7 @@
 #include "workplan_form.h"
 #include "temperature_form.h"
 #include "globalinclude.h"
+#include "moldcondition_form.h"
 
 namespace Ui {
 class MainWindow;
@@ -25,6 +26,7 @@ public:
     QPointer<Configration_Form> cConfigration_Form; //환경설정화면
     QPointer<WorkPlan_Form> cWorkPlan_Form; //작업계획화면
     QPointer<Temperature_Form> cTemperature_Form; //온도현황판화면
+    QPointer<MoldCondition_Form> cMoldCondition_Form;
     QStringList DatabaseInfo; //데이터베이스정보
     QTranslator Translator; //언어변환
 

@@ -117,6 +117,12 @@ void MainWindow::on_action_Show_Temperature_triggered() //온도현황판 버튼
         cTemperature_Form=new Temperature_Form();
         LoadSubWindow(cTemperature_Form);
     }
+
+    if(cMoldCondition_Form.isNull())
+    {
+        cMoldCondition_Form=new MoldCondition_Form();
+        LoadSubWindow(cMoldCondition_Form);
+    }
 }
 
 void MainWindow::on_action_Language_Korean_triggered()
