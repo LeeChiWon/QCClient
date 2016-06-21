@@ -114,63 +114,214 @@
         <translation>Show</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="107"/>
+        <location filename="mainwindow.ui" line="108"/>
         <source>툴</source>
         <translation>Tool</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="111"/>
+        <location filename="mainwindow.ui" line="112"/>
         <source>언어</source>
         <translation>Language</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="144"/>
+        <location filename="mainwindow.ui" line="146"/>
         <source>작업계획(Ctrl+&amp;W)</source>
         <translation>WorkPlan(Ctrl+&amp;W)</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="147"/>
+        <location filename="mainwindow.ui" line="149"/>
         <source>Ctrl+W</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="156"/>
+        <location filename="mainwindow.ui" line="158"/>
         <source>온도현황판(Ctrl+&amp;T)</source>
         <translation>Temperature(Ctrl+&amp;T)</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="159"/>
+        <location filename="mainwindow.ui" line="161"/>
         <source>Ctrl+T</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="174"/>
+        <location filename="mainwindow.ui" line="176"/>
         <source>한국어(Korean)(Ctrl+&amp;K)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="177"/>
+        <location filename="mainwindow.ui" line="179"/>
         <source>Ctrl+K</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="192"/>
+        <location filename="mainwindow.ui" line="194"/>
         <source>English(English)(Ctrl+&amp;E)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="195"/>
+        <location filename="mainwindow.ui" line="197"/>
         <source>Ctrl+E</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="204"/>
+        <location filename="mainwindow.ui" line="206"/>
         <source>환경설정(Ctrl+&amp;C)</source>
         <translation>Configration(Ctrl+&amp;C)</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="207"/>
+        <location filename="mainwindow.ui" line="209"/>
         <source>Ctrl+C</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="218"/>
+        <source>성형조건(Ctrl+&amp;M)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="221"/>
+        <source>Ctrl+M</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MoldCondition_Form</name>
+    <message>
+        <location filename="moldcondition_form.ui" line="14"/>
+        <source>성형조건</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="61"/>
+        <source>새로고침</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="102"/>
+        <source>인쇄</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="199"/>
+        <source>기계이름</source>
+        <translation type="unfinished">M/N</translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="360"/>
+        <source>보압</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="437"/>
+        <location filename="moldcondition_form.ui" line="1233"/>
+        <source>압력</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="514"/>
+        <location filename="moldcondition_form.ui" line="1156"/>
+        <location filename="moldcondition_form.ui" line="2289"/>
+        <source>속도</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="591"/>
+        <location filename="moldcondition_form.ui" line="1310"/>
+        <location filename="moldcondition_form.ui" line="2531"/>
+        <source>위치</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="685"/>
+        <source>사출시간</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="768"/>
+        <source>사출지연시간</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="851"/>
+        <source>보압절환위치</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="934"/>
+        <source>보압절환시간</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="1079"/>
+        <source>사출</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="1455"/>
+        <source>외부온도</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="1532"/>
+        <location filename="moldcondition_form.ui" line="1830"/>
+        <source>설정온도</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="1609"/>
+        <location filename="moldcondition_form.ui" line="1907"/>
+        <source>실제온도</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="1753"/>
+        <source>히터</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="2089"/>
+        <source>계량지연시간</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="2185"/>
+        <source>냉각시간</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="2366"/>
+        <source>배압</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="moldcondition_form.ui" line="2451"/>
+        <source>계량</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MoldCondition_Style</name>
+    <message>
+        <location filename="moldcondition_style.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location filename="moldcondition_style.ui" line="99"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MoldCondition_Style1</name>
+    <message>
+        <location filename="moldcondition_style1.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location filename="moldcondition_style1.ui" line="99"/>
+        <source>TextLabel</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -303,6 +454,44 @@
     </message>
 </context>
 <context>
+    <name>mold_set_popup</name>
+    <message>
+        <location filename="mold_set_popup.ui" line="14"/>
+        <source>금형설정</source>
+        <translation type="unfinished">Mold Set</translation>
+    </message>
+    <message>
+        <location filename="mold_set_popup.ui" line="22"/>
+        <source>금형추가</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mold_set_popup.ui" line="29"/>
+        <source>제거</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mold_set_popup.ui" line="43"/>
+        <source>검색</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mold_set_popup.cpp" line="17"/>
+        <source>moldname</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mold_set_popup.cpp" line="18"/>
+        <source>itemname</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="mold_set_popup.cpp" line="19"/>
+        <source>itmecode</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>temp_moniter_style1</name>
     <message>
         <location filename="temp_moniter_style1.ui" line="14"/>
@@ -322,6 +511,44 @@
     <message>
         <location filename="temp_moniter_style1.ui" line="88"/>
         <source>250</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>workmen_select_popup</name>
+    <message>
+        <location filename="workmen_select_popup.ui" line="14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="workmen_select_popup.ui" line="35"/>
+        <source>작업자추가</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="workmen_select_popup.ui" line="42"/>
+        <source>제거</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="workmen_select_popup.ui" line="56"/>
+        <source>검색</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="workmen_select_popup.cpp" line="16"/>
+        <source>number</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="workmen_select_popup.cpp" line="17"/>
+        <source>name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="workmen_select_popup.cpp" line="18"/>
+        <source>time</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
