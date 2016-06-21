@@ -176,7 +176,11 @@
     <message>
         <location filename="mainwindow.ui" line="218"/>
         <source>성형조건(Ctrl+&amp;M)</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>MoldCondition(Ctrl+&amp;M)</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="mainwindow.ui" line="221"/>
@@ -189,114 +193,198 @@
     <message>
         <location filename="moldcondition_form.ui" line="14"/>
         <source>성형조건</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>MoldCondtion</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="61"/>
         <source>새로고침</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Refresh</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="102"/>
         <source>인쇄</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Print</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="199"/>
         <source>기계이름</source>
+<<<<<<< HEAD
         <translation type="unfinished">M/N</translation>
+=======
+        <translation>MachineName</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="360"/>
         <source>보압</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Hld</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="437"/>
         <location filename="moldcondition_form.ui" line="1233"/>
         <source>압력</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Prs</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="514"/>
         <location filename="moldcondition_form.ui" line="1156"/>
         <location filename="moldcondition_form.ui" line="2289"/>
         <source>속도</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Spd</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="591"/>
         <location filename="moldcondition_form.ui" line="1310"/>
         <location filename="moldcondition_form.ui" line="2531"/>
         <source>위치</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Pos</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="685"/>
         <source>사출시간</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>InjTime</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="768"/>
         <source>사출지연시간</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>InjDelTime</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="851"/>
         <source>보압절환위치</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>SovPos</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="934"/>
         <source>보압절환시간</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>SovPrs</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="1079"/>
         <source>사출</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Inj</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="1455"/>
         <source>외부온도</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Ext.Temp</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="1532"/>
         <location filename="moldcondition_form.ui" line="1830"/>
         <source>설정온도</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Set</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="1609"/>
         <location filename="moldcondition_form.ui" line="1907"/>
         <source>실제온도</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Act</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="1753"/>
         <source>히터</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Heater</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="2089"/>
         <source>계량지연시간</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>ChgDelTime</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="2185"/>
         <source>냉각시간</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>CoolTime</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="2366"/>
         <source>배압</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Bps</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="moldcondition_form.ui" line="2451"/>
         <source>계량</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Chg</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
 </context>
 <context>
@@ -458,37 +546,65 @@
     <message>
         <location filename="mold_set_popup.ui" line="14"/>
         <source>금형설정</source>
+<<<<<<< HEAD
         <translation type="unfinished">Mold Set</translation>
+=======
+        <translation>Mold Set</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="mold_set_popup.ui" line="22"/>
         <source>금형추가</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Add</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="mold_set_popup.ui" line="29"/>
         <source>제거</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Del</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="mold_set_popup.ui" line="43"/>
         <source>검색</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Search</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="mold_set_popup.cpp" line="17"/>
         <source>moldname</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>moldname</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="mold_set_popup.cpp" line="18"/>
         <source>itemname</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>itemname</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="mold_set_popup.cpp" line="19"/>
         <source>itmecode</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>itmecode</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
 </context>
 <context>
@@ -524,32 +640,56 @@
     <message>
         <location filename="workmen_select_popup.ui" line="35"/>
         <source>작업자추가</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Add</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="workmen_select_popup.ui" line="42"/>
         <source>제거</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Del</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="workmen_select_popup.ui" line="56"/>
         <source>검색</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>Search</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="workmen_select_popup.cpp" line="16"/>
         <source>number</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>number</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="workmen_select_popup.cpp" line="17"/>
         <source>name</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>name</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
     <message>
         <location filename="workmen_select_popup.cpp" line="18"/>
         <source>time</source>
+<<<<<<< HEAD
         <translation type="unfinished"></translation>
+=======
+        <translation>time</translation>
+>>>>>>> refs/remotes/origin/master
     </message>
 </context>
 </TS>
