@@ -2,6 +2,8 @@
 #include "ui_workplan_form.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "mold_set_popup.h"
+#include "workmen_select_popup.h"
 
 extern MainWindow *pMain;
 
@@ -162,4 +164,16 @@ void WorkPlan_Form::on_comboBox_MachineName_currentIndexChanged(const QString &a
     QString query = QString("update systemset set current_macine_name = \'%1\'").arg(arg1);
     qDebug()<<query;
     localquery.exec(query);
+}
+
+void WorkPlan_Form::on_mold_set_btn_clicked()
+{
+    mold_set_popup *popup = new mold_set_popup(this);
+    popup->show();
+}
+
+void WorkPlan_Form::on_worker_set_btn_clicked()
+{
+    workmen_select_popup *popup = new workmen_select_popup(this);
+    popup->show();
 }
