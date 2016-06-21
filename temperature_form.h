@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QSqlDatabase>
 #include <QSqlQuery>
-#include <temp_moniter_style1.h>
+#include "temp_moniter_style1.h"
 #include <QTimer>
 
 #define TEMPLOOPTIME 1500

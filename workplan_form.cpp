@@ -26,6 +26,10 @@ WorkPlan_Form::WorkPlan_Form(QWidget *parent) :
     localquery.exec("select current_macine_name from systemset");
     localquery.next();
     ui->comboBox_MachineName->setCurrentText(localquery.value("current_macine_name").toString());
+
+    QString query = QString("update systemset set current_macine_name = \'%1\'").arg(ui->comboBox_MachineName->currentText());
+    localquery.exec(query);
+
     connect(ui->comboBox_MachineName,SIGNAL(currentIndexChanged(QString)),this,SLOT(on_comboBox_MachineName_currentIndexChanged(QString)));
 
     timer.setInterval(WORKPLANLOOPTIME);
@@ -156,5 +160,6 @@ void WorkPlan_Form::on_comboBox_MachineName_currentIndexChanged(const QString &a
 {
     QSqlQuery localquery(LocalDB);
     QString query = QString("update systemset set current_macine_name = \'%1\'").arg(arg1);
+    qDebug()<<query;
     localquery.exec(query);
 }

@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QtWidgets>
 #include <QSqlDatabase>
+#include <QSqlQuery>
 //#include "ui_configration_form.h"
 #include "moldcondition_style.h"
 
@@ -29,7 +30,6 @@ public:
     void MoldConditionStyleInit(MoldCondition_Style *Style,int Number,bool Hide);
 
 private slots:
-    void on_pushButton_2_clicked();
     void on_pushButton_Refresh_clicked();
     void on_pushButton_Printer_clicked();
 
