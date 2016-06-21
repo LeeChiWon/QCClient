@@ -20,7 +20,9 @@ SOURCES += main.cpp\
     workplan_form.cpp \
     temperature_form.cpp \
     temp_moniter_style1.cpp \
-    moldcondition_form.cpp
+    moldcondition_form.cpp \
+    moldcondition_style.cpp \
+    moldcondition_style1.cpp
 
 HEADERS  += mainwindow.h \
     configration_form.h \
@@ -28,14 +30,18 @@ HEADERS  += mainwindow.h \
     temperature_form.h \
     temp_moniter_style1.h \
     globalinclude.h \
-    moldcondition_form.h
+    moldcondition_form.h \
+    moldcondition_style.h \
+    moldcondition_style1.h
 
 FORMS    += mainwindow.ui \
     configration_form.ui \
     workplan_form.ui \
     temperature_form.ui \
     temp_moniter_style1.ui \
-    moldcondition_form.ui
+    moldcondition_form.ui \
+    moldcondition_style.ui \
+    moldcondition_style1.ui
 
 RESOURCES += \
     qcclientresource.qrc
