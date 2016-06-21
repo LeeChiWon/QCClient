@@ -22,6 +22,7 @@ public:
     QSqlDatabase LocalDB;
     QSqlDatabase RemoteDB;
     QTimer timer;
+    Ui::WorkPlan_Form *ui;
     ~WorkPlan_Form();
 
 private slots:
@@ -29,8 +30,12 @@ private slots:
     void main_update_loop();
     void Retranslator();
 
+    void on_mold_set_btn_clicked();
+
+    void on_worker_set_btn_clicked();
+
 private:
-    Ui::WorkPlan_Form *ui;
+
     void resizeEvent(QResizeEvent *);
 };
 
