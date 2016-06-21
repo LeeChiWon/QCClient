@@ -8,6 +8,9 @@
         <file>Image/background.png</file>
         <file>Image/Language.png</file>
         <file>Image/MainIcon.png</file>
+        <file>Image/printer.png</file>
+        <file>Image/refresh.png</file>
+        <file>Image/table.png</file>
     </qresource>
     <qresource prefix="/Language">
         <file>Lang_en_US.qm</file>

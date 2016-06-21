@@ -36,14 +36,16 @@ public:
     void LanguageChange(int LanguageSelect); //언어변경
 signals:
     void Retranslator(); //언어변환
+
 private slots:
     void on_action_Configration_triggered(); //환경설정버튼
     void on_action_Show_WorkPlan_triggered(); //작업계획버튼
     void on_action_Show_Temperature_triggered();
-
     void on_action_Language_Korean_triggered();
-
     void on_action_Language_English_triggered();
+    void on_action_MoldCondition_triggered();
+    void DatabaseCheck();
+
 
 private:
 

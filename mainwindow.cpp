@@ -22,38 +22,7 @@ void MainWindow::Init()
     pMain=this; //메인윈도우 복사
     ui->mdiArea->setBackground(*new QBrush(*new QPixmap(":/Image/Image/background.png"))); //QMDIArea 배경화면 추가
 
-    QSqlDatabase LocalDB=QSqlDatabase::addDatabase("QSQLITE","LocalDB");
-    LocalDB.setDatabaseName("Local.db");
-
-    if(!LocalDB.open())
-    {
-        qDebug()<<"local Database Setting Open failed!";
-        QSqlDatabase::removeDatabase("LocalDB");
-        return;
-    }
-
-    if(cConfigration_Form.isNull())
-    {
-        cConfigration_Form=new Configration_Form();
-        cConfigration_Form.clear();
-    }
-    //remote sql 접속
-    QSqlQuery localdbquery(LocalDB);
-    localdbquery.exec("select * from systemset");
-    localdbquery.next();
-    QSqlDatabase RemoteDB=QSqlDatabase::addDatabase("QMYSQL","RemoteDB");
-    RemoteDB.setHostName(localdbquery.value("remotedbip").toString());
-    RemoteDB.setDatabaseName(localdbquery.value("remotedbname").toString());
-    RemoteDB.setPort(localdbquery.value("remotedbport").toInt());
-    RemoteDB.setUserName(localdbquery.value("remotedbusername").toString());
-    RemoteDB.setPassword(localdbquery.value("remotedbpassword").toString());
-    LanguageChange(localdbquery.value("language").toInt());
-
-    if(!RemoteDB.open()){
-        qDebug()<<"remote Database Setting Open failed!";
-        QSqlDatabase::removeDatabase("RemoteDB");
-        return;
-    }
+    DatabaseCheck();
 }
 
 void MainWindow::LoadSubWindow(QWidget *widget)
@@ -117,12 +86,6 @@ void MainWindow::on_action_Show_Temperature_triggered() //온도현황판 버튼
         cTemperature_Form=new Temperature_Form();
         LoadSubWindow(cTemperature_Form);
     }
-
-    if(cMoldCondition_Form.isNull())
-    {
-        cMoldCondition_Form=new MoldCondition_Form();
-        LoadSubWindow(cMoldCondition_Form);
-    }
 }
 
 void MainWindow::on_action_Language_Korean_triggered()
@@ -133,4 +96,49 @@ void MainWindow::on_action_Language_Korean_triggered()
 void MainWindow::on_action_Language_English_triggered()
 {
     LanguageChange(LANGUAGE_ENGLISH);
+}
+
+void MainWindow::on_action_MoldCondition_triggered()
+{
+    if(cMoldCondition_Form.isNull())
+    {
+        cMoldCondition_Form=new MoldCondition_Form();
+        LoadSubWindow(cMoldCondition_Form);
+    }
+}
+
+void MainWindow::DatabaseCheck()
+{
+    QSqlDatabase LocalDB=QSqlDatabase::addDatabase("QSQLITE","LocalDB");
+    LocalDB.setDatabaseName("Local.db");
+
+    if(!LocalDB.open())
+    {
+        qDebug()<<"local Database Setting Open failed!";
+        QSqlDatabase::removeDatabase("LocalDB");
+        return;
+    }
+
+    if(cConfigration_Form.isNull())
+    {
+        cConfigration_Form=new Configration_Form();
+        cConfigration_Form.clear();
+    }
+    //remote sql 접속
+    QSqlQuery localdbquery(LocalDB);
+    localdbquery.exec("select * from systemset");
+    localdbquery.next();
+    QSqlDatabase RemoteDB=QSqlDatabase::addDatabase("QMYSQL","RemoteDB");
+    RemoteDB.setHostName(localdbquery.value("remotedbip").toString());
+    RemoteDB.setDatabaseName(localdbquery.value("remotedbname").toString());
+    RemoteDB.setPort(localdbquery.value("remotedbport").toInt());
+    RemoteDB.setUserName(localdbquery.value("remotedbusername").toString());
+    RemoteDB.setPassword(localdbquery.value("remotedbpassword").toString());
+    LanguageChange(localdbquery.value("language").toInt());
+
+    if(!RemoteDB.open()){
+        qDebug()<<"remote Database Setting Open failed!";
+        QSqlDatabase::removeDatabase("RemoteDB");
+        return;
+    }
 }
