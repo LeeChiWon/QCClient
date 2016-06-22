@@ -18,6 +18,7 @@ public:
     Ui::MoldCondition_Style *ui;
 
 private:
+   //void resizeEvent(QResizeEvent *);
 
 };
 

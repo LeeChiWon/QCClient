@@ -42,6 +42,7 @@ private slots:
 
 private:
     Ui::MoldCondition_Form *ui;
+    void resizeEvent(QResizeEvent*);
    // Ui::Configration_Form *ui1;
 };
 

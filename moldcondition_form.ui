@@ -243,6 +243,14 @@
              <height>30</height>
             </size>
            </property>
+           <property name="font">
+            <font>
+             <family>굴림</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
            <property name="text">
             <string>시간</string>
            </property>
@@ -300,19 +308,54 @@
            <item>
             <layout class="QGridLayout" name="gridLayout_8">
              <item row="0" column="3" rowspan="4">
-              <widget class="MoldCondition_Style" name="widget_Hold_Step_4" native="true"/>
+              <widget class="MoldCondition_Style" name="widget_Hold_Step_4" native="true">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
              </item>
              <item row="0" column="2" rowspan="4">
-              <widget class="MoldCondition_Style" name="widget_Hold_Step_5" native="true"/>
+              <widget class="MoldCondition_Style" name="widget_Hold_Step_5" native="true">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
              </item>
              <item row="0" column="4" rowspan="4">
-              <widget class="MoldCondition_Style" name="widget_Hold_Step_3" native="true"/>
+              <widget class="MoldCondition_Style" name="widget_Hold_Step_3" native="true">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
              </item>
              <item row="0" column="6" rowspan="4">
-              <widget class="MoldCondition_Style" name="widget_Hold_Step_1" native="true"/>
+              <widget class="MoldCondition_Style" name="widget_Hold_Step_1" native="true">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
              </item>
              <item row="0" column="5" rowspan="4">
-              <widget class="MoldCondition_Style" name="widget_Hold_Step_2" native="true"/>
+              <widget class="MoldCondition_Style" name="widget_Hold_Step_2" native="true">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
              </item>
              <item row="0" column="0" rowspan="4">
               <layout class="QGridLayout" name="gridLayout_14">
@@ -556,7 +599,7 @@
                 </widget>
                </item>
                <item row="3" column="0">
-                <widget class="QLabel" name="label_Title_Hold_Pos">
+                <widget class="QLabel" name="label_Title_Hold_Time">
                  <property name="palette">
                   <palette>
                    <active>
@@ -625,7 +668,7 @@
                   <bool>true</bool>
                  </property>
                  <property name="text">
-                  <string>위치</string>
+                  <string>시간</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignCenter</set>
@@ -715,6 +758,14 @@
                    </disabled>
                   </palette>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>굴림</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="autoFillBackground">
                   <bool>true</bool>
                  </property>
@@ -797,6 +848,14 @@
                     </colorrole>
                    </disabled>
                   </palette>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>굴림</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
                  </property>
                  <property name="autoFillBackground">
                   <bool>true</bool>
@@ -881,6 +940,14 @@
                    </disabled>
                   </palette>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>굴림</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="autoFillBackground">
                   <bool>true</bool>
                  </property>
@@ -964,6 +1031,14 @@
                    </disabled>
                   </palette>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>굴림</family>
+                   <pointsize>12</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
                  <property name="autoFillBackground">
                   <bool>true</bool>
                  </property>
@@ -1040,10 +1115,24 @@
          <item row="0" column="0" colspan="5">
           <layout class="QGridLayout" name="gridLayout_6">
            <item row="0" column="3" rowspan="4">
-            <widget class="MoldCondition_Style" name="widget_InjStep_9" native="true"/>
+            <widget class="MoldCondition_Style" name="widget_InjStep_9" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
            </item>
            <item row="0" column="2" rowspan="4">
-            <widget class="MoldCondition_Style" name="widget_InjStep_10" native="true"/>
+            <widget class="MoldCondition_Style" name="widget_InjStep_10" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
            </item>
            <item row="0" column="1" rowspan="4">
             <layout class="QGridLayout" name="gridLayout_12">
@@ -1366,28 +1455,84 @@
             </layout>
            </item>
            <item row="0" column="10" rowspan="4">
-            <widget class="MoldCondition_Style" name="widget_InjStep_2" native="true"/>
+            <widget class="MoldCondition_Style" name="widget_InjStep_2" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
            </item>
            <item row="0" column="4" rowspan="4">
-            <widget class="MoldCondition_Style" name="widget_InjStep_8" native="true"/>
+            <widget class="MoldCondition_Style" name="widget_InjStep_8" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
            </item>
            <item row="0" column="5" rowspan="4">
-            <widget class="MoldCondition_Style" name="widget_InjStep_7" native="true"/>
+            <widget class="MoldCondition_Style" name="widget_InjStep_7" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
            </item>
            <item row="0" column="6" rowspan="4">
-            <widget class="MoldCondition_Style" name="widget_InjStep_6" native="true"/>
+            <widget class="MoldCondition_Style" name="widget_InjStep_6" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
            </item>
            <item row="0" column="7" rowspan="4">
-            <widget class="MoldCondition_Style" name="widget_InjStep_5" native="true"/>
+            <widget class="MoldCondition_Style" name="widget_InjStep_5" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
            </item>
            <item row="0" column="8" rowspan="4">
-            <widget class="MoldCondition_Style" name="widget_InjStep_4" native="true"/>
+            <widget class="MoldCondition_Style" name="widget_InjStep_4" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
            </item>
            <item row="0" column="9" rowspan="4">
-            <widget class="MoldCondition_Style" name="widget_InjStep_3" native="true"/>
+            <widget class="MoldCondition_Style" name="widget_InjStep_3" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
            </item>
            <item row="0" column="11" rowspan="4">
-            <widget class="MoldCondition_Style" name="widget_InjStep_1" native="true"/>
+            <widget class="MoldCondition_Style" name="widget_InjStep_1" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -2137,6 +2282,14 @@
                  </disabled>
                 </palette>
                </property>
+               <property name="font">
+                <font>
+                 <family>굴림</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
                <property name="autoFillBackground">
                 <bool>true</bool>
                </property>
@@ -2233,6 +2386,14 @@
                  </disabled>
                 </palette>
                </property>
+               <property name="font">
+                <font>
+                 <family>굴림</family>
+                 <pointsize>12</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
                <property name="autoFillBackground">
                 <bool>true</bool>
                </property>
@@ -2253,19 +2414,54 @@
            <item row="0" column="6" colspan="2">
             <layout class="QGridLayout" name="gridLayout_4">
              <item row="0" column="1">
-              <widget class="MoldCondition_Style" name="widget_Suckb1_Step" native="true"/>
+              <widget class="MoldCondition_Style" name="widget_Suckb1_Step" native="true">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
              </item>
              <item row="0" column="4">
-              <widget class="MoldCondition_Style" name="widget_Chg_Step_3" native="true"/>
+              <widget class="MoldCondition_Style" name="widget_Chg_Step_3" native="true">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
              </item>
              <item row="0" column="3">
-              <widget class="MoldCondition_Style" name="widget_Chg_Step_2" native="true"/>
+              <widget class="MoldCondition_Style" name="widget_Chg_Step_2" native="true">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
              </item>
              <item row="0" column="2">
-              <widget class="MoldCondition_Style" name="widget_Chg_Step_1" native="true"/>
+              <widget class="MoldCondition_Style" name="widget_Chg_Step_1" native="true">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
              </item>
              <item row="0" column="5">
-              <widget class="MoldCondition_Style" name="widget_Suckb2_Step" native="true"/>
+              <widget class="MoldCondition_Style" name="widget_Suckb2_Step" native="true">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
              </item>
              <item row="0" column="0">
               <layout class="QGridLayout" name="gridLayout_17">
