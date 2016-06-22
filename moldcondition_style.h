@@ -2,6 +2,7 @@
 #define MOLDCONDITION_STYLE_H
 
 #include <QWidget>
+#include <QtWidgets>
 
 namespace Ui {
 class MoldCondition_Style;
@@ -14,9 +15,10 @@ class MoldCondition_Style : public QWidget
 public:
     explicit MoldCondition_Style(QWidget *parent = 0);
     ~MoldCondition_Style();
+    Ui::MoldCondition_Style *ui;
 
 private:
-    Ui::MoldCondition_Style *ui;
+
 };
 
 #endif // MOLDCONDITION_STYLE_H
