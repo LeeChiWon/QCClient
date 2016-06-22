@@ -17,3 +17,8 @@
 
 #define LANGUAGE_KOREAN 0
 #define LANGUAGE_ENGLISH 1
+
+#define TIMEOUT 1500
+
+#define ON 1
+#define OFF 0
