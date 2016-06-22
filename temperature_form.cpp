@@ -123,11 +123,11 @@ void Temperature_Form::tempdataup(temp_moniter_style1 *tempdata){
                                 .arg(current_machinename);
     remotequery.exec(query);
     remotequery.next();
-    tempdata->ui->real_lcd_number->display(remotequery.value(temp_real_name).toDouble()/10.0);
-    int real_value = remotequery.value(temp_real_name).toInt()/10;
-    int setting_value = remotequery.value(temp_set_name).toInt()/10;
-    int up_value =  remotequery.value(temp_up_name).toInt()/10;
-    int down_value =  remotequery.value(temp_down_name).toInt()/10;
+    tempdata->ui->real_lcd_number->display(remotequery.value(temp_real_name).toDouble());
+    int real_value = remotequery.value(temp_real_name).toInt();
+    int setting_value = remotequery.value(temp_set_name).toInt();
+    int up_value =  remotequery.value(temp_up_name).toInt();
+    int down_value =  remotequery.value(temp_down_name).toInt();
     up_value = setting_value + up_value;
     down_value = setting_value-down_value;
     tempdata->ui->setting_btn->setText(QString("%1").arg(setting_value));
