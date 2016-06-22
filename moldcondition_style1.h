@@ -14,9 +14,9 @@ class MoldCondition_Style1 : public QWidget
 public:
     explicit MoldCondition_Style1(QWidget *parent = 0);
     ~MoldCondition_Style1();
-
-private:
     Ui::MoldCondition_Style1 *ui;
+private:
+
 };
 
 #endif // MOLDCONDITION_STYLE1_H
