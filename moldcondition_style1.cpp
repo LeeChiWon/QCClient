@@ -11,4 +11,5 @@ MoldCondition_Style1::MoldCondition_Style1(QWidget *parent) :
 MoldCondition_Style1::~MoldCondition_Style1()
 {
     delete ui;
+
 }

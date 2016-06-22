@@ -478,7 +478,7 @@
     <message>
         <location filename="mold_set_popup.cpp" line="17"/>
         <source>moldname</source>
-        <translation>moldname</translation>
+        <translation>moldname </translation>
     </message>
     <message>
         <location filename="mold_set_popup.cpp" line="18"/>

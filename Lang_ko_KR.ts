@@ -478,7 +478,7 @@
     <message>
         <location filename="mold_set_popup.cpp" line="17"/>
         <source>moldname</source>
-        <translation>금형명</translation>
+        <translation>금형이름</translation>
     </message>
     <message>
         <location filename="mold_set_popup.cpp" line="18"/>
