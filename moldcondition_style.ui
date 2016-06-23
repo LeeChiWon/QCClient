@@ -17,7 +17,7 @@
    <item row="0" column="0">
     <widget class="QLabel" name="label_Title">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
@@ -92,6 +92,14 @@
        </disabled>
       </palette>
      </property>
+     <property name="font">
+      <font>
+       <family>굴림</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
      <property name="autoFillBackground">
       <bool>true</bool>
      </property>
@@ -106,7 +114,7 @@
    <item row="2" column="0">
     <widget class="QLineEdit" name="lineEdit_2">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
@@ -125,7 +133,7 @@
    <item row="1" column="0">
     <widget class="QLineEdit" name="lineEdit_1">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
@@ -144,7 +152,7 @@
    <item row="3" column="0">
     <widget class="QLineEdit" name="lineEdit_3">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>

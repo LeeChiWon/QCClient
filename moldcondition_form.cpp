@@ -88,7 +88,7 @@ void MoldCondition_Form::Init()
 
 void MoldCondition_Form::Show()
 {
-    ui->label_DateTime->setText(QDateTime::currentDateTime().toString("yyyy-mm-dd hh:mm:ss"));
+    ui->label_DateTime->setText(QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss"));
 
     QSqlQuery localquery(LocalDB);
     localquery.exec("select current_macine_name from systemset");
@@ -179,7 +179,7 @@ void MoldCondition_Form::Show()
                 MoldConditionStyleInit(SuckbWidgetStyle.at(i),i,DbValue,false);
             }
         }
-    }    
+    }
 
     ui->lineEdit_SOVPos->setText(QString("%1").arg(remotequery.value(QString("sovpos")).toDouble(),0,'f',1));
     ui->lineEdit_SOVPrs->setText(QString("%1").arg(remotequery.value(QString("sovprs")).toDouble(),0,'f',1));
@@ -293,5 +293,109 @@ void MoldCondition_Form::on_pushButton_Refresh_clicked()
 
 void MoldCondition_Form::on_pushButton_Printer_clicked()
 {
+
+}
+
+void MoldCondition_Form::resizeEvent(QResizeEvent *)
+{
+    QFont font,font1;
+    font.setPointSizeF(this->width()/86);
+    font1.setPointSizeF(this->width()/105);
+    font.setBold(true);
+
+    if(font.pointSizeF()<=10)
+    {
+        font.setPointSizeF(10);
+    }
+
+    if(font1.pointSizeF()<=9)
+    {
+        font1.setPointSizeF(9);
+    }
+
+    for(int i=0; i<16; i++)
+    {
+        if(i<10)
+        {
+            InjWidgetStyle.at(i)->ui->label_Title->setFont(font);
+            InjWidgetStyle.at(i)->ui->lineEdit_1->setFont(font1);
+            InjWidgetStyle.at(i)->ui->lineEdit_2->setFont(font1);
+            InjWidgetStyle.at(i)->ui->lineEdit_3->setFont(font1);
+        }
+        if(i<5)
+        {
+            HoldPWidgetStyle.at(i)->ui->label_Title->setFont(font);
+            HoldPWidgetStyle.at(i)->ui->lineEdit_1->setFont(font1);
+            HoldPWidgetStyle.at(i)->ui->lineEdit_2->setFont(font1);
+            HoldPWidgetStyle.at(i)->ui->lineEdit_3->setFont(font1);
+        }
+        if(i<3)
+        {
+            ChgWidgetStyle.at(i)->ui->label_Title->setFont(font);
+            ChgWidgetStyle.at(i)->ui->lineEdit_1->setFont(font1);
+            ChgWidgetStyle.at(i)->ui->lineEdit_2->setFont(font1);
+            ChgWidgetStyle.at(i)->ui->lineEdit_3->setFont(font1);
+        }
+
+        if(i<2)
+        {
+            SuckbWidgetStyle.at(i)->ui->label_Title->setFont(font);
+            SuckbWidgetStyle.at(i)->ui->lineEdit_1->setFont(font1);
+            SuckbWidgetStyle.at(i)->ui->lineEdit_2->setFont(font1);
+            SuckbWidgetStyle.at(i)->ui->lineEdit_3->setFont(font1);
+        }
+
+        TempWidgetStyle.at(i)->ui->label_Title->setFont(font);
+        TempWidgetStyle.at(i)->ui->lineEdit_1->setFont(font1);
+        TempWidgetStyle.at(i)->ui->lineEdit_2->setFont(font1);
+    }
+
+    ui->label_Title_Chg_Bps->setFont(font1);
+    ui->label_Title_Chg_Pos->setFont(font1);
+    ui->label_Title_Chg_Spd->setFont(font1);
+    ui->label_Title_ExternTemp_Act->setFont(font1);
+    ui->label_Title_ExternTemp_Set->setFont(font1);
+    ui->label_Title_Heater_Set->setFont(font1);
+    ui->label_Title_Heater_Act->setFont(font1);
+    ui->label_Title_Hold_Time->setFont(font1);
+    ui->label_Title_Hold_Prs->setFont(font1);
+    ui->label_Title_Hold_Spd->setFont(font1);
+    ui->label_Title_Inj_Pos->setFont(font1);
+    ui->label_Title_Inj_Prs->setFont(font1);
+    ui->label_Title_Inj_Spd->setFont(font1);
+    ui->lineEdit_ChgDelTime->setFont(font1);
+    ui->lineEdit_InjDelTime->setFont(font1);
+    ui->lineEdit_InjTime->setFont(font1);
+    ui->lineEdit_CoolTime->setFont(font1);
+    ui->lineEdit_SOVPos->setFont(font1);
+    ui->lineEdit_SOVPrs->setFont(font1);
+
+    font.setPointSizeF(this->width()/43);
+    font.setBold(true);
+    if(font.pointSizeF()<=20)
+    {
+        font.setPointSizeF(20);
+    }
+    ui->label_Title->setFont(font);
+
+    font.setPointSizeF(this->width()/83);
+    font.setBold(true);
+    if(font.pointSizeF()<=12)
+    {
+        font.setPointSizeF(12);
+    }
+    ui->label_DateTime->setFont(font);
+    ui->label_Title_Chg->setFont(font);
+    ui->label_Title_ChgDelTime->setFont(font);
+    ui->label_Title_CoolTime->setFont(font);
+    ui->label_Title_ExternTemp->setFont(font);
+    ui->label_Title_Heater->setFont(font);
+    ui->label_Title_Inj->setFont(font);
+    ui->label_Title_Hold->setFont(font);
+    ui->label_Title_InjDelTime->setFont(font);
+    ui->label_Title_InjTime->setFont(font);
+    ui->label_Title_SOVPos->setFont(font);
+    ui->label_Title_SOVPrs->setFont(font);
+
 
 }
