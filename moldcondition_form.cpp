@@ -396,6 +396,4 @@ void MoldCondition_Form::resizeEvent(QResizeEvent *)
     ui->label_Title_InjTime->setFont(font);
     ui->label_Title_SOVPos->setFont(font);
     ui->label_Title_SOVPrs->setFont(font);
-
-
 }
