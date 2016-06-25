@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql network
+QT       += core gui sql network printsupport
 
 #CONFIG   += console #Debug Console & Projects->Run->Run in terminal check
 
