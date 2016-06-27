@@ -14,7 +14,7 @@
    <string>온도현황판</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="qcclientresource.qrc">
+   <iconset>
     <normaloff>:/Image/Image/Temperature.png</normaloff>:/Image/Image/Temperature.png</iconset>
   </property>
   <layout class="QGridLayout" name="gridLayout_2">
@@ -63,6 +63,13 @@
    <item row="2" column="4">
     <widget class="temp_moniter_style1" name="temp1" native="true"/>
    </item>
+   <item row="5" column="4">
+    <widget class="QPushButton" name="tempnamesetup_btn">
+     <property name="text">
+      <string>온도이름설정</string>
+     </property>
+    </widget>
+   </item>
   </layout>
  </widget>
  <customwidgets>
@@ -73,8 +80,6 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources>
-  <include location="qcclientresource.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

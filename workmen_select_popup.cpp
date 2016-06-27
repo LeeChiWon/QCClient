@@ -17,6 +17,8 @@ workmen_select_popup::workmen_select_popup(QWidget *parent) :
     sqlmodel->setHeaderData(1,Qt::Horizontal,QVariant(tr("name")));
     sqlmodel->setHeaderData(2,Qt::Horizontal,QVariant(tr("time")));
 
+    ui->tableView->horizontalHeader()->setStretchLastSection(true);
+
 }
 
 workmen_select_popup::~workmen_select_popup()
