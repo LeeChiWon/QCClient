@@ -128,7 +128,9 @@ void MainWindow::DatabaseCheck()
     QSqlQuery localdbquery(LocalDB);
     localdbquery.exec("select * from systemset");
     localdbquery.next();
+    QSqlDatabase::removeDatabase("RemoteDB");
     QSqlDatabase RemoteDB=QSqlDatabase::addDatabase("QMYSQL","RemoteDB");
+
     RemoteDB.setHostName(localdbquery.value("remotedbip").toString());
     RemoteDB.setDatabaseName(localdbquery.value("remotedbname").toString());
     RemoteDB.setPort(localdbquery.value("remotedbport").toInt());

@@ -6,6 +6,7 @@
 #include <QSqlQuery>
 #include "temp_moniter_style1.h"
 #include <QTimer>
+#include "tempnameset_popup.h"
 
 #define TEMPLOOPTIME 1500
 namespace Ui {
@@ -24,6 +25,7 @@ public:
     QString current_machinename;
     void tempinit(temp_moniter_style1 *tempdata,int number);
     void tempdataup(temp_moniter_style1 *tempdata);
+    void tempnamechagne();
     ~Temperature_Form();
 
 private:
@@ -32,6 +34,7 @@ private:
 private slots:
     void mainlooptimeout();
     void Retranslator();
+    void on_tempnamesetup_btn_clicked();
 };
 
 #endif // TEMPERATURE_FORM_H
