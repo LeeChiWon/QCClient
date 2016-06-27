@@ -34,8 +34,8 @@ void mold_set_popup::on_buttonBox_accepted()
     QSqlQuery query(remotedb);
     QSqlRecord select_recode = sqlmodel->record(selectmodel.row());
     mw1->ui->mold_name_edit->setText(select_recode.value("mold_name").toString());
-    mw1->ui->item_code_label->setText(select_recode.value("item_code").toString());
-    mw1->ui->item_name_label->setText(select_recode.value("item_name").toString());
+    mw1->ui->item_code_value_label->setText(select_recode.value("item_code").toString());
+    mw1->ui->item_name_value_label->setText(select_recode.value("item_name").toString());
     QString querystr = QString("update Systeminfo set mold_name = \'%1\',"
                                "item_code = \'%2\',"
                                "item_name = \'%3\' "
