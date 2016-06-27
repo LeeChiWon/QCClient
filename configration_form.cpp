@@ -193,3 +193,8 @@ void Configration_Form::TitleShow(int Changed)
 {
     ui->label_Title->setText(ui->tabWidget->tabText(Changed));
 }
+
+void Configration_Form::on_pushButton_clicked()
+{
+
+}

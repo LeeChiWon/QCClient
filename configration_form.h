@@ -36,6 +36,8 @@ private slots:
     void Retranslator();
     void TitleShow(int Changed);
 
+    void on_pushButton_clicked();
+
 private:
     Ui::Configration_Form *ui;
 };
