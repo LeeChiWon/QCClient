@@ -24,7 +24,8 @@ SOURCES += main.cpp\
     moldcondition_style.cpp \
     moldcondition_style1.cpp \
     mold_set_popup.cpp \
-    workmen_select_popup.cpp
+    workmen_select_popup.cpp \
+    tempnameset_popup.cpp
 
 HEADERS  += mainwindow.h \
     configration_form.h \
@@ -36,7 +37,8 @@ HEADERS  += mainwindow.h \
     moldcondition_style.h \
     moldcondition_style1.h \
     mold_set_popup.h \
-    workmen_select_popup.h
+    workmen_select_popup.h \
+    tempnameset_popup.h
 
 FORMS    += mainwindow.ui \
     configration_form.ui \
@@ -47,7 +49,8 @@ FORMS    += mainwindow.ui \
     moldcondition_style.ui \
     moldcondition_style1.ui \
     mold_set_popup.ui \
-    workmen_select_popup.ui
+    workmen_select_popup.ui \
+    tempnameset_popup.ui
 
 RESOURCES += \
     qcclientresource.qrc
